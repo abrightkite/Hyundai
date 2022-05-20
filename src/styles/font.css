@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "HyundaiSansHead-Bold";
+  src: url("https://wcraft.s3.ap-northeast-2.amazonaws.com/test/font/HyundaiSansHeadKRBold.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HyundaiSansHead-Light";
+  src: url("https://wcraft.s3.ap-northeast-2.amazonaws.com/test/font/HyundaiSansHeadKRLight.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HyundaiSansHead-Medium";
+  src: url("https://wcraft.s3.ap-northeast-2.amazonaws.com/test/font/HyundaiSansHeadKRMedium.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HyundaiSansHead-Regular";
+  src: url("https://wcraft.s3.ap-northeast-2.amazonaws.com/test/font/HyundaiSansHeadKRRegular.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HyundaiSansText-Medium";
+  src: url("https://wcraft.s3.ap-northeast-2.amazonaws.com/test/font/HyundaiSansTextKRMedium.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HyundaiSansText-Regular";
+  src: url("https://wcraft.s3.ap-northeast-2.amazonaws.com/test/font/HyundaiSansTextKRRegular.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/*# sourceMappingURL=font.css.map */
