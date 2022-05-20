@@ -11,7 +11,7 @@ locale 데이터는 storage를 짚고가기 위해 문서를 만들었고, 나�
 
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"/> <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"/> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white"/> <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white"/>
 
-### `*` Hyundai-NFT를 고른 이유
+### `1` Hyundai-NFT를 고른 이유
 
 세 번째 부트캠프가 끝나고 각자 만들고 싶은 웹사이트를 골라 오기로 했다.
 
@@ -37,8 +37,11 @@ Hyundai-NFT는 그 3개의 웹사이트 중 부원들의 선호도가 가장 높
 
 이정도 했으면 VS code도 알겠다.
 
+### `2` Destination
+<img width="1440" alt="Screen Shot 2022-05-20 at 10 04 51 AM" src="https://user-images.githubusercontent.com/88179771/169428224-7448063d-383b-41c5-891a-356f2cbbb3cc.png">
 
-### `*` 현재 상황
+
+### `3` 현재 상황
 
 쉬지 않고 마크업을 작성한 덕분일까 하루만에 대부분의 구조가 끝이 났다.
 
