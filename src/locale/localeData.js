@@ -1,3 +1,10 @@
+const subtitle = {
+  txt: {
+    ko_value: "무한한 이동의 자유가 펼쳐질 새로운 세상",
+    en_value: "A new world with infinite freedom of mobility",
+  },
+};
+
 const introData = {
   txt1: {
     ko_value:
@@ -28,6 +35,40 @@ const introData = {
       "5월 9일, Hyundai Metamobility universe는 무한한 가능성을 담고 있는 별똥별 NFT로 시작됩니다.",
     Men_value:
       "Come discover Hyundai’s Metamobility NFT,\ntranscending time and space.\n",
+  },
+};
+
+const productData = {
+  txt1: {
+    ko_value:
+      "어느날 무한한 에너지를 가진 별똥별 1만개가\n지구에 떨어지게 됩니다.",
+    en_value:
+      "One night, 10,000 shooting stars suddenly fell on Earth, \n" +
+      "bursting with infinite energy.\n",
+    Mko_value:
+      "어느날 무한한 에너지를 가진 별똥별 1만개가\n지구에 떨어지게 됩니다.",
+    Men_value:
+      "One night, 10,000 shooting stars suddenly fell on Earth, bursting with infinite energy.\n",
+  },
+  txt2: {
+    ko_value:
+      "시공간을 넘어 우리에게 다가온 이 별똥별들은 어떤 모험을 하게 될까요?\n그리고 별똥별들을 품게 된 지구는 어떤 새로운 세상을 보여줄 수 있을까요?",
+    en_value:
+      "Transcending time and space, on what exciting\nadventure will these shooting stars take us?\nAnd what amazing new world will Earth show us\nwith these shooting stars?",
+    Mko_value:
+      "시공간을 넘어 우리에게 다가온 이 별똥별들은 어떤 모험을 하게 될까요?\n그리고 별똥별들을 품게 된 지구는 어떤 새로운 세상을 보여줄 수 있을까요?",
+    Men_value:
+      "Transcending time and space, on what exciting\nadventure will these shooting stars take us?\nAnd what amazing new world will Earth show us with these shooting stars?",
+  },
+  txt3: {
+    ko_value:
+      "5월 9일, Hyundai Metamobility universe는\n무한한 가능성을 담고 있는 별똥별 NFT로 시작됩니다.",
+    en_value:
+      "May 9th, 2022.\nHyundai Metamobility universe comes to life with \nShooting star NFTs - full of infinite possibility.",
+    Mko_value:
+      "5월 9일, Hyundai Metamobility universe는 무한한 가능성을 담고 있는 별똥별 NFT로 시작됩니다.",
+    Men_value:
+      "May 9th, 2022.\nHyundai Metamobility universe comes to life with Shooting star NFTs - full of infinite possibility.",
   },
 };
 
@@ -119,6 +160,112 @@ const generalSaleData = {
     en_value: "Price",
   },
 };
+
+const roadmapSubtitle = {
+  subTitle: {
+    ko_value:
+      "Hyundai Metamobility universe 공개!\n시공간을 뛰어넘는 새로운 세상을 완성해 갈 Metamobility NFT들을 만나보세요.",
+    en_value:
+      "Hyundai Metamobility universe unveils!\nCome discover Metamobility NFTs creating a new world that transcends time and space.",
+    Mko_value:
+      "Hyundai Metamobility universe 공개!\n시공간을 뛰어넘는 새로운 세상을 완성해 갈\nMetamobility NFT들을 만나보세요.",
+    Men_value:
+      "Hyundai Metamobility universe unveils!\nCome discover Metamobility NFTs creating a new world that transcends time and space.",
+  },
+};
+
+const roadmapData = [
+  {
+    title: {
+      ko_value: "공식사이트 오픈",
+      en_value: "Hyundai NFT\nofficial website opens",
+    },
+    content: {
+      ko_value:
+        "Hyundai Metamobility universe를\n소개 합니다. 시공간을 뛰어넘는 새로운\n세상을 완성해 갈 Metamobility NFT들을 만나보세요.",
+      en_value:
+        "Welcome to the \nHyundai Metamobility universe!\nCome discover Metamobility NFTs\ncreating a new world that transcends time and space.",
+      Mko_value:
+        "Hyundai Metamobility universe를\n소개 합니다. 시공간을 뛰어넘는 새로운 세상을 완성해 갈 Metamobility NFT들을 만나보세요.",
+      Men_value:
+        "Welcome to the \nHyundai Metamobility universe!\nCome discover Metamobility NFTs\ncreating a new world that transcends time and space.",
+    },
+    date: "22.05.02",
+    status: "before",
+  },
+  {
+    title: {
+      ko_value: "Pre-sale",
+      en_value: "Pre-sale",
+    },
+    content: {
+      ko_value:
+        "화이트리스트를 대상으로\nShooting star NFT 민팅을 시작합니다.\n총 10,000개 중 3,000개가\n먼저 판매 됩니다.",
+      en_value:
+        "Whitelist members will have\naccess to the first minting of\nShooting star Metamobility NFTs.\n3,000 out of total 10,000 will be available for pre-sale.",
+      Mko_value:
+        "화이트리스트를 대상으로\nShooting star NFT 민팅을 시작합니다.\n총 10,000개 중 3,000개가\n먼저 판매 됩니다.",
+      Men_value:
+        "Whitelist members will have\naccess to the first minting of\nShooting star Metamobility NFTs.\n3,000 out of total 10,000 will be available for pre-sale.",
+    },
+    date: "22.05.09",
+    status: "before",
+  },
+  {
+    title: {
+      ko_value: "General sale",
+      en_value: "General sale",
+    },
+    content: {
+      ko_value: "6,500개의 Shooting star NFT\n선착순 민팅이 시작 됩니다.",
+      en_value:
+        "The minting of 6,500 of the\nremaining Shooting star NFTs\nwill be available on a first-come,\nfirst-served basis.\n",
+      Mko_value: "6,500개의 Shooting star NFT\n선착순 민팅이 시작 됩니다.",
+      Men_value:
+        "The minting of 6,500 of the\nremaining Shooting star NFTs\nwill be available on a first-come,\nfirst-served basis.\n",
+    },
+    date: "22.05.10",
+    status: "active",
+  },
+  {
+    title: {
+      ko_value: "Reveal",
+      en_value: "Reveal",
+    },
+    content: {
+      ko_value:
+        "Shooting star NFT가 일제히\nMetamobility NFT로 변환 됩니다.\n변환된 NFT의 모습에 따라 각기 다른\n레어리티를 가지고 있습니다.",
+      en_value:
+        "Shooting star NFTs will be\nconverted to Metamobility NFTs,\nwith different rarities per design\nin a holder’s wallet.\n",
+      Mko_value:
+        "Shooting star NFT가 일제히\nMetamobility NFT로 변환 됩니다.\n변환된 NFT의 모습에 따라 각기 다른\n레어리티를 가지고 있습니다.",
+      Men_value:
+        "Shooting star NFTs will be\nconverted to Metamobility NFTs,\nwith different rarities per design\nin a holder’s wallet.\n",
+    },
+    date: "Later in May",
+    status: "before",
+  },
+  {
+    title: {
+      ko_value: "",
+      en_value: "",
+    },
+    content: {
+      ko_value:
+        "Metamobility NFT 홀더들은\n현대가 제공하는 다양한 혜택을\n만나게 될 것이며, 로드맵도\n지속 업데이트 될 예정입니다.\n\n당신과 함께 완성해 갈\nMetamobility universe를\n기대하세요.",
+      en_value:
+        "NFT holders will have access\nto various upcoming benefits\nHyundai Motor Company has\nto offer.\n\nMore are coming your way.\nThe roadmap will be updated continuously.",
+      Mko_value:
+        "Metamobility NFT 홀더들은\n현대가 제공하는 다양한 혜택을\n만나게 될 것이며, 로드맵도\n지속 업데이트 될 예정입니다.\n\n당신과 함께 완성해 갈\nMetamobility universe를\n기대하세요.",
+      Men_value:
+        "NFT holders will have access\nto various upcoming benefits\nHyundai Motor Company has\nto offer.\n\nMore are coming your way.\nThe roadmap will be updated continuously.",
+    },
+    date: "",
+    status: "before",
+    className: "alignCenter",
+  },
+];
+
 const faqData = [
   {
     title: {

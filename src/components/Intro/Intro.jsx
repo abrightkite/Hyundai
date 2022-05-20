@@ -6,9 +6,10 @@ const Intro = ({ introData }) => {
       <div className="intro-inner">
         <h2>Into the Metamobility Universe</h2>
         <div>
-          <p>{introData.txt1.en_value}</p>
-          <p>{introData.txt2.en_value}</p>
-          <p>{introData.txt3.en_value}</p>
+          {introData &&
+            Object.values(introData).map((item, index) => {
+              return <p key={index}>{item.en_value}</p>;
+            })}
         </div>
       </div>
       <div className="intro-background">

@@ -6,9 +6,9 @@ const Product = ({ productData }) => {
       <div className="product-content">
         <h2>Shooting star</h2>
         <div>
-          <p>{productData.txt1.en_value}</p>
-          <p>{productData.txt2.en_value}</p>
-          <p>{productData.txt3.en_value}</p>
+          {Object.values(productData).map((item, index) => {
+            return <p key={index}>{item.en_value}</p>;
+          })}
         </div>
       </div>
       <div className="product-background">
