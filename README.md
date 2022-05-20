@@ -45,4 +45,4 @@ Hyundai-NFT는 그 3개의 웹사이트 중 부원들의 선호도가 가장 높
 
 쉬지 않고 마크업을 작성한 덕분일까 하루만에 대부분의 구조가 끝이 났다.
 
-![localhost_3000_ (1)](https://user-images.githubusercontent.com/88179771/169426927-9e8530ff-a89c-402c-b83b-2e4efceeb207.png) <img width="297" alt="Screen Shot 2022-05-16 at 10 49 49 PM" src="https://user-images.githubusercontent.com/88179771/169426990-56da765e-25eb-43f2-a1b1-db72229d360e.png">
+![localhost_3000_ (1)](https://user-images.githubusercontent.com/88179771/169426927-9e8530ff-a89c-402c-b83b-2e4efceeb207.png)
