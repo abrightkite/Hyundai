@@ -8,6 +8,9 @@ Archtecture는 최대한 Hyundai-NFT Web과 동일하게 진행하였다.
 
 locale 데이터는 storage를 짚고가기 위해 문서를 만들었고, 나머지는 하드코딩으로 대체하였다.
 
+
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"/> <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"/> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white"/> <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white"/>
+
 ### `*` Hyundai-NFT를 고른 이유
 
 세 번째 부트캠프가 끝나고 각자 만들고 싶은 웹사이트를 골라 오기로 했다.
