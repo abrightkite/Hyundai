@@ -43,10 +43,10 @@ Hyundai-NFT는 3개의 웹사이트 중 부원들의 선호도가 가장 높은 
 
 ### `3` 진행 상황
 
-1. 대부분의 구조가 끝났다.
+1. 대부분의 구조가 끝났다. [05.16]
 
 ![localhost_3000_ (1)](https://user-images.githubusercontent.com/88179771/169426927-9e8530ff-a89c-402c-b83b-2e4efceeb207.png)
 
-2. Common style setting과 Header & Banner를 완성했다.
+2. Common style setting과 Header & Banner를 완성했다. [05.23]
 
 ![05 23inprog](https://user-images.githubusercontent.com/88179771/171115802-4cffb582-9045-4e6f-98e5-fcfd478e1257.png)
