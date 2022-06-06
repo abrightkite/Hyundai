@@ -1,0 +1,421 @@
+@font-face {
+  font-family: "HyundaiSansHead-Bold";
+  src: url("https://wcraft.s3.ap-northeast-2.amazonaws.com/test/font/HyundaiSansHeadKRBold.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HyundaiSansHead-Light";
+  src: url("https://wcraft.s3.ap-northeast-2.amazonaws.com/test/font/HyundaiSansHeadKRLight.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HyundaiSansHead-Medium";
+  src: url("https://wcraft.s3.ap-northeast-2.amazonaws.com/test/font/HyundaiSansHeadKRMedium.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HyundaiSansHead-Regular";
+  src: url("https://wcraft.s3.ap-northeast-2.amazonaws.com/test/font/HyundaiSansHeadKRRegular.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HyundaiSansText-Medium";
+  src: url("https://wcraft.s3.ap-northeast-2.amazonaws.com/test/font/HyundaiSansTextKRMedium.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HyundaiSansText-Regular";
+  src: url("https://wcraft.s3.ap-northeast-2.amazonaws.com/test/font/HyundaiSansTextKRRegular.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: inherit;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: inherit;
+}
+
+header,
+nav,
+section,
+article,
+footer {
+  display: block;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+button {
+  border: none;
+  display: inline-block;
+  background: inherit;
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+}
+
+body {
+  font-family: "HyundaiSansText-Regular";
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.4px;
+}
+
+@media (max-width: 520px) {
+  body {
+    font-size: 3.734vw;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 429px) {
+  body > div:last-child {
+    position: fixed !important;
+    height: 80% !important;
+    width: 100% !important;
+    z-index: 1000000 !important;
+    left: 0 !important;
+    top: 0 !important;
+  }
+}
+
+.ir_pm,
+.blind_txt {
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+.ir_wa {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.ir_so {
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+.tit {
+  font-family: "HyundaiSansHead-Medium";
+  font-size: 58px;
+  line-height: 64px;
+  margin-bottom: 44px;
+}
+
+@media (max-width: 1040px) {
+  .tit {
+    font-size: 5vw;
+    margin-bottom: 24px;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 768px) {
+  .tit {
+    font-size: 6vw;
+  }
+}
+
+@media (max-width: 415px) {
+  .tit {
+    margin-bottom: 3vw;
+  }
+}
+
+.tit2 {
+  text-align: center;
+  font-family: "HyundaiSansHead-Medium";
+  font-size: 42px;
+  line-height: 54px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .tit2 {
+    font-family: "HyundaiSansHead-Medium";
+    font-size: 27px;
+    line-height: 35px;
+  }
+}
+
+.textItem {
+  margin-bottom: 26px;
+}
+
+.textItem:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 415px) {
+  .textItem {
+    margin-bottom: 3vw;
+  }
+}
+
+.header-wrap {
+  position: relative;
+  top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 40px;
+  height: 40px;
+  color: #fff;
+  z-index: 10000;
+}
+
+@media (max-width: 800px) {
+  .header-wrap {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  h1 {
+    position: relative;
+    display: block;
+    padding: 24px 34px;
+    z-index: 999999;
+  }
+}
+
+@media (max-width: 415px) {
+  h1 {
+    padding: 5.333vw;
+  }
+}
+
+h1 .logo {
+  width: 217px;
+  height: 29px;
+}
+
+@media (max-width: 800px) {
+  h1 .logo {
+    width: 149px;
+  }
+}
+
+@media (max-width: 415px) {
+  h1 .logo {
+    width: 36vw;
+  }
+}
+
+button {
+  color: #fff;
+}
+
+.gnb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "HyundaiSansHead-Medium";
+  font-size: 16px;
+  line-height: 30px;
+}
+
+@media (max-width: 800px) {
+  .gnb {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.gnb .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gnb .nav > li {
+  padding: 0 6px;
+  margin: 0 6px;
+}
+
+@media (max-width: 800px) {
+  .gnb .nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: self-start;
+        -ms-flex-align: self-start;
+            align-items: self-start;
+    gap: 24px;
+    width: 100%;
+    height: 100%;
+    padding-top: 3em;
+    background: #002c5f;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+.gnb .locale {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gnb .locale > li {
+  padding: 0 8px;
+}
+
+.gnb .locale .lang:nth-child(2) {
+  position: relative;
+}
+
+.gnb .locale .lang:nth-child(2)::before {
+  position: absolute;
+  bottom: 28%;
+  left: 0;
+  content: "";
+  width: 1px;
+  height: 12px;
+  background-color: #fff;
+}
+
+.gnb .gray {
+  color: #4f4e4e;
+}
+
+.gnb .sns {
+  margin-left: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 800px) {
+  .gnb .sns {
+    margin: 0;
+    padding-left: 40px;
+  }
+}
+
+.gnb .sns li {
+  height: 40px;
+}
+
+.gnb .sns li:nth-child(2) {
+  margin-left: 16px;
+}
+
+.gnb .sns li a {
+  width: 40px;
+  height: 40px;
+}
+
+.gnb .sns li a span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.gnb .sns li a span.discord {
+  background: #fff -webkit-image-set(url(https://hyundai-nft.s3.ap-northeast-2.amazonaws.com/image/discord.png) 1x, url(https://hyundai-nft.s3.ap-northeast-2.amazonaws.com/image/discord%402x.png) 2x) center no-repeat;
+  background: #fff image-set(url(https://hyundai-nft.s3.ap-northeast-2.amazonaws.com/image/discord.png) 1x, url(https://hyundai-nft.s3.ap-northeast-2.amazonaws.com/image/discord%402x.png) 2x) center no-repeat;
+  background-size: 27.23px;
+}
+
+.gnb .sns li a span.twitter {
+  background: #fff -webkit-image-set(url(https://hyundai-nft.s3.ap-northeast-2.amazonaws.com/image/twitter.png) 1x, url(https://hyundai-nft.s3.ap-northeast-2.amazonaws.com/image/twitter%402x.png) 2x) center no-repeat;
+  background: #fff image-set(url(https://hyundai-nft.s3.ap-northeast-2.amazonaws.com/image/twitter.png) 1x, url(https://hyundai-nft.s3.ap-northeast-2.amazonaws.com/image/twitter%402x.png) 2x) center no-repeat;
+  background-size: 27px;
+}
+/*# sourceMappingURL=header.css.map */

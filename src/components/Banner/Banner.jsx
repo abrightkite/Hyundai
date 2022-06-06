@@ -1,8 +1,9 @@
 import React from "react";
+import "./css/banner.css";
 
 const Banner = ({ subtitle }) => {
   return (
-    <div className="banner-wrap">
+    <section className="banner-container">
       <div className="banner-inner">
         <h2>
           <div>Hyundai</div>
@@ -11,7 +12,13 @@ const Banner = ({ subtitle }) => {
         </h2>
         <p>{subtitle.txt.en_value}</p>
       </div>
-    </div>
+      <div className="scroll">
+        <p>Scroll Down</p>
+        <div class="mouseDown">
+          <span></span>
+        </div>
+      </div>
+    </section>
   );
 };
 

@@ -2,6 +2,7 @@
 @import "./font.scss";
 @import "./reset.scss";
 @import "./color.scss";
+$url-images: "https://hyundai-nft.s3.ap-northeast-2.amazonaws.com/image/";
 
 body {
   font-family: "HyundaiSansText-Regular";
@@ -25,7 +26,8 @@ body {
 }
 
 // ir
-.ir_pm {
+.ir_pm,
+.blind_txt {
   display: block;
   overflow: hidden;
   font-size: 0;

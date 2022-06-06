@@ -1,0 +1,22 @@
+@import "../../../styles/common.scss";
+
+.banner-wrap {
+  width: 100%;
+  height: 100vh;
+
+  background: image-set(
+      url($url-images + "mainBanner.jpg") 1x,
+      url($url-images + "mainBanner%402x.jpg") 2x
+    )
+    center no-repeat;
+
+  background-size: cover;
+
+  @media (max-width: 620px) {
+    background: image-set(
+        url($url-images + "mbannerBG.jpg") 1x,
+        url($url-images + "mbannerBG2x.jpg") 2x
+      )
+      center top no-repeat;
+  }
+}

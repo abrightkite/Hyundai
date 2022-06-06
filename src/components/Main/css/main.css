@@ -191,4 +191,19 @@ body {
     margin-bottom: 3vw;
   }
 }
-/*# sourceMappingURL=common.css.map */
+
+.banner-wrap {
+  width: 100%;
+  height: 100vh;
+  background: -webkit-image-set(url("https://hyundai-nft.s3.ap-northeast-2.amazonaws.com/image/mainBanner.jpg") 1x, url("https://hyundai-nft.s3.ap-northeast-2.amazonaws.com/image/mainBanner%402x.jpg") 2x) center no-repeat;
+  background: image-set(url("https://hyundai-nft.s3.ap-northeast-2.amazonaws.com/image/mainBanner.jpg") 1x, url("https://hyundai-nft.s3.ap-northeast-2.amazonaws.com/image/mainBanner%402x.jpg") 2x) center no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 620px) {
+  .banner-wrap {
+    background: -webkit-image-set(url("https://hyundai-nft.s3.ap-northeast-2.amazonaws.com/image/mbannerBG.jpg") 1x, url("https://hyundai-nft.s3.ap-northeast-2.amazonaws.com/image/mbannerBG2x.jpg") 2x) center top no-repeat;
+    background: image-set(url("https://hyundai-nft.s3.ap-northeast-2.amazonaws.com/image/mbannerBG.jpg") 1x, url("https://hyundai-nft.s3.ap-northeast-2.amazonaws.com/image/mbannerBG2x.jpg") 2x) center top no-repeat;
+  }
+}
+/*# sourceMappingURL=main.css.map */

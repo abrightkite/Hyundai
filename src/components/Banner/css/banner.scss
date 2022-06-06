@@ -1,0 +1,119 @@
+@import "../../../styles/common.scss";
+
+section.banner-container {
+  position: relative;
+  @include flexBox(flex, stretch, flex-end);
+  max-width: 1120px;
+  width: 100%;
+  height: calc(100% - 40px);
+  margin: 0 auto;
+  padding-bottom: 7vw;
+  color: #fff;
+
+  @media (max-width: 1120px) {
+    padding: 35px;
+  }
+  @media (max-width: 667px) {
+    padding: 1vw 5vw;
+  }
+  @media (max-width: 415px) {
+    padding: 0 5vw;
+  }
+}
+
+.banner-inner {
+  width: 100%;
+
+  h2 {
+    @include font64;
+
+    @media (max-width: 1024px) {
+      font-size: 5vw;
+      line-height: 1.3;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 8vw;
+      line-height: 1.3;
+    }
+
+    @media (max-width: 736px) {
+      font-size: 5vw;
+    }
+
+    @media (max-width: 520px) {
+      font-size: 10vw;
+    }
+  }
+
+  p {
+    @include font24;
+    margin-top: 2.5rem;
+
+    @media (max-width: 620px) {
+      font-size: 4.8vw;
+      line-height: 1;
+      margin-top: 0;
+    }
+    @media (max-width: 667px) {
+      font-size: 3vw;
+      margin-top: 1rem;
+    }
+    @media (max-width: 415px) {
+      font-size: 4.3vw;
+      margin-bottom: 5vw;
+    }
+  }
+}
+
+.scroll {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
+
+  .mouseDown {
+    font-size: 0.9em; /* CONTROL MOUSE SIZE */
+    border: 2px solid rgba(255, 255, 255, 1);
+    display: block;
+    width: 1.7em;
+    height: 2.8em;
+    border-radius: 0.9em;
+    margin: 0 auto;
+    text-decoration: none;
+    transition: border 0.2s ease-out;
+
+    > span {
+      display: block;
+      background: #fff;
+      width: 0.2em;
+      height: 0.3em;
+      margin: 0.7em auto 0;
+      border-radius: 0.4em;
+
+      animation-name: scroll;
+      animation-duration: 1.5s;
+      animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+      animation-iteration-count: infinite;
+      will-change: transform;
+    }
+  }
+
+  @keyframes scroll {
+    0%,
+    20% {
+      transform: translateY(0) scaleY(1);
+    }
+    10% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(1.2em) scaleY(1.5);
+      opacity: 0.01;
+    }
+  }
+}
