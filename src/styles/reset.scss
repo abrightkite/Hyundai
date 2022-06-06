@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: inherit;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: inherit;
+}
+
+header,
+nav,
+section,
+article,
+footer {
+  display: block;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+button {
+  border: none;
+  display: inline-block;
+  background: inherit;
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+}

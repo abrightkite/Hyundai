@@ -1,0 +1,169 @@
+$url-font: "https://wcraft.s3.ap-northeast-2.amazonaws.com/test/font/";
+
+@font-face {
+  font-family: "HyundaiSansHead-Bold";
+  src: url($url-font + "HyundaiSansHeadKRBold.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HyundaiSansHead-Light";
+  src: url($url-font + "HyundaiSansHeadKRLight.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HyundaiSansHead-Medium";
+  src: url($url-font + "HyundaiSansHeadKRMedium.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "HyundaiSansHead-Regular";
+  src: url($url-font + "HyundaiSansHeadKRRegular.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HyundaiSansText-Medium";
+  src: url($url-font + "HyundaiSansTextKRMedium.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "HyundaiSansText-Regular";
+  src: url($url-font + "HyundaiSansTextKRRegular.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin font14 {
+  font-family: "HyundaiSansText-Regular";
+  font-size: 14px;
+  line-height: 1;
+}
+
+@mixin font16 {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.4px;
+}
+
+@mixin font16Bold {
+  font-family: "HyundaiSansHead-Medium";
+  font-size: 16px;
+  line-height: 30px;
+}
+
+@mixin font18 {
+  font-size: 18px;
+  line-height: 21.6px;
+  letter-spacing: 0.45px;
+}
+
+@mixin font20Medium {
+  font-family: "HyundaiSansHead-Medium";
+  font-size: 20px;
+  line-height: 26px;
+}
+
+@mixin font20Bold {
+  font-family: "HyundaiSansHead-Bold";
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: -0.4px;
+}
+
+@mixin font20 {
+  font-family: "HyundaiSansText-Medium";
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.6px;
+}
+
+@mixin font24 {
+  font-family: "HyundaiSansText-Medium";
+  font-size: 24px;
+  line-height: 28.8px;
+  letter-spacing: -0.24px;
+}
+
+@mixin font26 {
+  font-family: "HyundaiSansHead-Medium";
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+@mixin font27 {
+  font-family: "HyundaiSansHead-Medium";
+  font-size: 27px;
+  line-height: 35px;
+}
+
+@mixin font30 {
+  font-family: "HyundaiSansText-Medium";
+  font-size: 30px;
+  line-height: 36px;
+}
+
+@mixin font30Bold {
+  font-family: "HyundaiSansHead-Medium";
+  font-size: 30px;
+  line-height: 36px;
+}
+
+@mixin font38 {
+  font-family: "HyundaiSansHead-Medium";
+  font-size: 38px;
+  line-height: 58px;
+}
+@mixin font42 {
+  font-family: "HyundaiSansHead-Medium";
+  font-size: 42px;
+  line-height: 54px;
+}
+
+@mixin font48 {
+  font-family: "HyundaiSansHead-Medium";
+  font-size: 48px;
+  line-height: 57.6px;
+}
+@mixin font50 {
+  font-family: "HyundaiSansHead-Medium";
+  font-size: 50px;
+  line-height: 1;
+}
+
+@mixin font58 {
+  font-family: "HyundaiSansHead-Medium";
+  font-size: 58px;
+  line-height: 64px;
+}
+
+@mixin font64 {
+  font-family: "HyundaiSansHead-Medium";
+  font-size: 64px;
+  line-height: 66px;
+}
+
+@mixin font84 {
+  font-family: "HyundaiSansHead-Medium";
+  font-size: 84px;
+  line-height: 96px;
+}
+
+@mixin font70 {
+  font-family: "HyundaiSansHead-Regular";
+  font-size: 70px;
+  line-height: 103.2px;
+}
+
+@mixin font100 {
+  font-family: "HyundaiSansHead-Medium";
+  font-size: 100px;
+  line-height: 1.3;
+}

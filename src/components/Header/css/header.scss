@@ -1,0 +1,150 @@
+@import "../../../styles/common.scss";
+
+.header-wrap {
+  position: relative;
+  top: 40px;
+  @include flexBox(flex, space-between, center);
+  padding: 0 40px;
+  height: 40px;
+  color: $gray100;
+  z-index: 10000;
+
+  @media (max-width: 800px) {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+h1 {
+  @media (max-width: 800px) {
+    position: relative;
+    display: block;
+    padding: 24px 34px;
+    z-index: 999999;
+  }
+
+  @media (max-width: 415px) {
+    padding: 5.333vw;
+  }
+
+  .logo {
+    width: 217px;
+    height: 29px;
+
+    @media (max-width: 800px) {
+      width: 149px;
+    }
+    @media (max-width: 415px) {
+      width: 36vw;
+    }
+  }
+}
+
+button {
+  color: #fff;
+}
+
+.gnb {
+  @include flexBox(flex, space-between, center);
+  @include font16Bold;
+
+  @media (max-width: 800px) {
+    width: 100%;
+    height: 100%;
+  }
+  .nav {
+    @include flexBox(flex, space-between, center);
+
+    > li {
+      padding: 0 6px;
+      margin: 0 6px;
+    }
+
+    @media (max-width: 800px) {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: self-start;
+      gap: 24px;
+      width: 100%;
+      height: 100%;
+      padding-top: 3em;
+      background: $blue;
+      transform: translateX(-100%);
+    }
+  }
+
+  .locale {
+    @include flexBox(flex, space-between, center);
+
+    > li {
+      padding: 0 8px;
+    }
+
+    .lang:nth-child(2) {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        bottom: 28%;
+        left: 0;
+        content: "";
+        width: 1px;
+        height: 12px;
+        background-color: #fff;
+      }
+    }
+  }
+  .gray {
+    color: $gray2;
+  }
+  .sns {
+    margin-left: 24px;
+    @include flexBox(flex, space-between, center);
+
+    @media (max-width: 800px) {
+      margin: 0;
+      padding-left: 40px;
+    }
+
+    li {
+      height: 40px;
+
+      &:nth-child(2) {
+        margin-left: 16px;
+      }
+
+      a {
+        width: 40px;
+        height: 40px;
+
+        span {
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          cursor: pointer;
+          transition: 0.5s;
+
+          &.discord {
+            background: #fff image-set(url(https://hyundai-nft.s3.ap-northeast-2.amazonaws.com/image/discord.png) 1x, url(https://hyundai-nft.s3.ap-northeast-2.amazonaws.com/image/discord%402x.png) 2x) center no-repeat;
+            background-size: 27.23px;
+          }
+
+          &.twitter {
+            background: #fff image-set(url(https://hyundai-nft.s3.ap-northeast-2.amazonaws.com/image/twitter.png) 1x, url(https://hyundai-nft.s3.ap-northeast-2.amazonaws.com/image/twitter%402x.png) 2x) center no-repeat;
+            background-size: 27px;
+          }
+        }
+      }
+    }
+  }
+}

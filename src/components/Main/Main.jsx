@@ -5,11 +5,12 @@ import HeaderContainer from "../Header/containers/HeaderContainer";
 import IntroContainer from "../Intro/containers/IntroContainer";
 import ProductContainer from "../Product/containers/ProductContainer";
 import SaleContainer from "../Sale/containers/SaleContainer";
+import "./css/main.css";
 
 const Main = () => {
   return (
     <div className="main-wrap">
-      <div style={{ backgroundColor: "#ddd" }}>
+      <div className="banner-wrap">
         <HeaderContainer />
         <BannerContainer />
       </div>
