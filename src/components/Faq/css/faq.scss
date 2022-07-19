@@ -1,0 +1,111 @@
+@import "../../../styles/common.scss";
+
+.faq {
+  width: 100%;
+  padding: 98px 0;
+  @include flexBox(flex, center, center);
+  background: $beige;
+
+  @media (max-width: 676px) {
+    padding: 10vw 0;
+  }
+
+  .faq-inner {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 1140px) {
+      padding: 0 35px;
+    }
+    @media (max-width: 767px) {
+      padding: 0 24px;
+    }
+    @media (max-width: 415px) {
+      padding: 3vw;
+    }
+  }
+}
+
+details {
+  margin-bottom: 4px;
+  background: #fff;
+
+  .question {
+    position: relative;
+    padding: 20px 48px;
+    @include font20;
+    transition: all 0.2s;
+    background: #fff;
+    cursor: pointer;
+
+    @media (max-width: 767px) and(min-width: 667px) {
+      padding: 20px 5vw;
+      font-size: 2.8vw;
+      line-height: 1.2;
+    }
+
+    @media (max-width: 665px) {
+      padding: 20px 5vw;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    &:after {
+      position: absolute;
+      right: 5%;
+      top: 50%;
+      content: "";
+      width: 20px;
+      height: 10.75px;
+      transform: translateY(-50%) rotate(180deg);
+      background: image-set(
+          url($url-images + "arrow.png") 1x,
+          url($url-images + "arrow%402x.png") 2x
+        )
+        center bottom no-repeat;
+      background: -webkit-image-set(
+          url($url-images + "arrow.png") 1x,
+          url($url-images + "arrow%402x.png") 2x
+        )
+        center bottom no-repeat;
+    }
+  }
+}
+
+details[open] {
+  .question {
+    &:after {
+      transform: translateY(-50%) rotate(0);
+    }
+  }
+
+  .answers {
+    background: $gray;
+    padding: 48px;
+
+    @media (max-width: 767px) {
+      padding: 24px;
+    }
+    @media (max-width: 415px) {
+      padding: 5vw;
+    }
+
+    .item {
+      margin-bottom: 30px;
+      white-space: pre-wrap;
+
+      > a {
+        color: $gray1000;
+      }
+
+      @media (max-width: 415px) {
+        margin-bottom: 5vw;
+        word-break: keep-all;
+      }
+    }
+  }
+}
