@@ -1,7 +1,14 @@
 import React from "react";
-import "./css/banner.css";
+// import "./css/banner.css";
 
-const Banner = ({ subtitle }) => {
+const subtitle = {
+  txt: {
+    ko_value: "무한한 이동의 자유가 펼쳐질 새로운 세상",
+    en_value: "A new world with infinite freedom of mobility",
+  },
+};
+
+const Banner = () => {
   return (
     <section className="banner-container">
       <div className="banner-inner">

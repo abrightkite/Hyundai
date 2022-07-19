@@ -1,0 +1,196 @@
+@import "../../../styles/common.scss";
+
+.road-map {
+  @include flexBox(flex, center, center);
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: image-set(
+      url($url-images + "roadMapBG.jpg") 1x,
+      url($url-images + "roadMapBG%402x.jpg") 2x
+    )
+    center bottom no-repeat;
+  background: -webkit-image-set(
+      url($url-images + "roadMapBG.jpg") 1x,
+      url($url-images + "roadMapBG%402x.jpg") 2x
+    )
+    center bottom no-repeat;
+  background-size: cover;
+
+  @media (max-width: 900px) {
+    height: 100vh;
+    padding: 5em 0;
+  }
+
+  .road-map-inner {
+    position: relative;
+    @include flexBox(flex, center, center);
+    flex-direction: column;
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 7vw 44px;
+
+    @media (max-width: 1080px) {
+      padding: 10vw 3vw;
+    }
+
+    .txt {
+      margin-bottom: 60px;
+      text-align: center;
+      white-space: pre-wrap;
+      word-break: keep-all;
+
+      @media (max-width: 415px) {
+        margin-bottom: 5vw;
+        padding: 0 10vw;
+      }
+    }
+  }
+
+  .wrapper {
+    @include flexBox(flex, center, center);
+  }
+
+  .wrap {
+    @include flexBox(flex, center, center);
+    white-space: pre-wrap;
+
+    .list {
+      @include flexBox(flex, space-between, flex-start);
+      flex-direction: column;
+      background: $blue;
+      width: 100%;
+      height: 380px;
+      padding: 2em 1.8em;
+
+      @media (max-width: 500px) {
+        //padding: 5;
+        word-break: keep-all;
+        height: 330px;
+      }
+
+      &.alignCenter {
+        @include flexBox(flex, center, flex-start);
+
+        .title {
+          display: none;
+          flex: none;
+        }
+        .text {
+          flex: none;
+          height: auto;
+          margin: 0;
+        }
+      }
+      &.active {
+        background: $gray100;
+        color: $gray1000;
+        transform: scale(1.06);
+        margin: 0 10px 0 0 !important;
+
+        .title {
+          align-items: stretch;
+        }
+
+        .date {
+          color: $sky;
+        }
+      }
+
+      &.fontSize {
+        overflow: scroll;
+      }
+      .title {
+        display: flex;
+        flex: 1 0 auto;
+        align-items: center;
+        @include font26;
+
+        @media (max-width: 1040px) {
+          margin-bottom: 3vw;
+          font-size: 2.48vw;
+        }
+        @media (max-width: 767px) {
+          font-size: 3.8vw;
+        }
+        @media (max-width: 540px) {
+          font-size: 4.8vw;
+        }
+      }
+
+      .text {
+        display: flex;
+        flex: 1 0 auto;
+        margin-top: 1em;
+        //height: 148px;
+        line-height: 1.4;
+
+        &.fontSize {
+          font-size: 13px;
+        }
+        @media (max-width: 580px) {
+          //height: 128px;
+        }
+      }
+
+      .date {
+        font-family: "HyundaiSansHead-Bold";
+        margin-top: 2vw;
+      }
+    }
+  }
+
+  .dateDesc {
+    margin-top: 1rem;
+    text-align: right;
+    width: 100%;
+  }
+
+  .swiper {
+    width: 100%;
+    position: unset;
+
+    @media (max-width: 767px) {
+      padding: 0;
+    }
+
+    .swiper-slide {
+      height: 360px;
+
+      @media (min-width: 420px) {
+        height: 420px;
+      }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: $gray100;
+      top: 65%;
+      transform: translateY(-50%);
+    }
+
+    .swiper-button-next {
+      right: -3%;
+
+      @media (max-width: 1200px) {
+        right: 0%;
+      }
+      @media (max-width: 1100px) {
+        display: none;
+      }
+    }
+
+    .swiper-button-prev {
+      left: -3%;
+
+      @media (max-width: 1200px) {
+        left: 0%;
+      }
+
+      @media (max-width: 1100px) {
+        display: none;
+      }
+    }
+  }
+}

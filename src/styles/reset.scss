@@ -39,3 +39,10 @@ button {
 input {
   outline: none;
 }
+
+summary {
+  display: block;
+}
+summary::-webkit-details-marker {
+  display: none;
+}

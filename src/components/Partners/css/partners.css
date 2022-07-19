@@ -1,0 +1,309 @@
+@font-face {
+  font-family: "HyundaiSansHead-Bold";
+  src: url("https://wcraft.s3.ap-northeast-2.amazonaws.com/test/font/HyundaiSansHeadKRBold.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HyundaiSansHead-Light";
+  src: url("https://wcraft.s3.ap-northeast-2.amazonaws.com/test/font/HyundaiSansHeadKRLight.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HyundaiSansHead-Medium";
+  src: url("https://wcraft.s3.ap-northeast-2.amazonaws.com/test/font/HyundaiSansHeadKRMedium.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HyundaiSansHead-Regular";
+  src: url("https://wcraft.s3.ap-northeast-2.amazonaws.com/test/font/HyundaiSansHeadKRRegular.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HyundaiSansText-Medium";
+  src: url("https://wcraft.s3.ap-northeast-2.amazonaws.com/test/font/HyundaiSansTextKRMedium.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HyundaiSansText-Regular";
+  src: url("https://wcraft.s3.ap-northeast-2.amazonaws.com/test/font/HyundaiSansTextKRRegular.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: inherit;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: inherit;
+}
+
+header,
+nav,
+section,
+article,
+footer {
+  display: block;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+button {
+  border: none;
+  display: inline-block;
+  background: inherit;
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+}
+
+body {
+  font-family: "HyundaiSansText-Regular";
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.4px;
+}
+
+@media (max-width: 520px) {
+  body {
+    font-size: 3.734vw;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 429px) {
+  body > div:last-child {
+    position: fixed !important;
+    height: 80% !important;
+    width: 100% !important;
+    z-index: 1000000 !important;
+    left: 0 !important;
+    top: 0 !important;
+  }
+}
+
+.ir_pm,
+.blind_txt {
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+.ir_wa {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.ir_so {
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+.tit {
+  font-family: "HyundaiSansHead-Medium";
+  font-size: 58px;
+  line-height: 64px;
+  margin-bottom: 44px;
+}
+
+@media (max-width: 1040px) {
+  .tit {
+    font-size: 5vw;
+    margin-bottom: 24px;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 768px) {
+  .tit {
+    font-size: 6vw;
+  }
+}
+
+@media (max-width: 415px) {
+  .tit {
+    margin-bottom: 3vw;
+  }
+}
+
+.tit2 {
+  text-align: center;
+  font-family: "HyundaiSansHead-Medium";
+  font-size: 42px;
+  line-height: 54px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .tit2 {
+    font-family: "HyundaiSansHead-Medium";
+    font-size: 27px;
+    line-height: 35px;
+  }
+}
+
+.textItem {
+  margin-bottom: 26px;
+}
+
+.textItem:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 415px) {
+  .textItem {
+    margin-bottom: 3vw;
+  }
+}
+
+.partners {
+  background: #000;
+  color: #fff;
+  padding: 98px 0;
+}
+
+@media (max-width: 767px) {
+  .partners {
+    padding: 10vw 35px;
+  }
+}
+
+.partners .partners-inner {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1040px) {
+  .partners .partners-inner {
+    padding: 0 35px;
+  }
+}
+
+.partners .partners-inner .partners-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 48px;
+}
+
+@media (max-width: 767px) {
+  .partners .partners-inner .partners-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 48px;
+  }
+}
+
+@media (max-width: 415px) {
+  .partners .partners-inner .partners-content {
+    gap: 8vw;
+  }
+}
+
+.partners .partners-inner .partners-content .innocean {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 185px;
+  height: 48px;
+  background: image-set(url("https://hyundai-nft.s3.ap-northeast-2.amazonaws.com/image/partner01.png") 1x, url("https://hyundai-nft.s3.ap-northeast-2.amazonaws.com/image/partner01%402x.png") 2x) center no-repeat;
+  background: -webkit-image-set(url("https://hyundai-nft.s3.ap-northeast-2.amazonaws.com/image/partner01.png") 1x, url("https://hyundai-nft.s3.ap-northeast-2.amazonaws.com/image/partner01%402x.png") 2x) center no-repeat;
+}
+
+@media (max-width: 415px) {
+  .partners .partners-inner .partners-content .innocean {
+    width: 35vw;
+    background-size: contain;
+    height: 9vw;
+  }
+}
+
+.partners .partners-inner .partners-content .witchwitch {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 192px;
+  height: 49px;
+  background: -webkit-image-set(url("https://hyundai-nft.s3.ap-northeast-2.amazonaws.com/image/partner03.png") 1x, url("https://hyundai-nft.s3.ap-northeast-2.amazonaws.com/image/partner03%402x.png") 2x) center no-repeat;
+  background: image-set(url("https://hyundai-nft.s3.ap-northeast-2.amazonaws.com/image/partner03.png") 1x, url("https://hyundai-nft.s3.ap-northeast-2.amazonaws.com/image/partner03%402x.png") 2x) center no-repeat;
+  background: -webkit-image-set(url("https://hyundai-nft.s3.ap-northeast-2.amazonaws.com/image/partner03.png") 1x, url("https://hyundai-nft.s3.ap-northeast-2.amazonaws.com/image/partner03%402x.png") 2x) bottom no-repeat;
+}
+
+@media (max-width: 415px) {
+  .partners .partners-inner .partners-content .witchwitch {
+    width: 35vw;
+    background-size: contain;
+    height: 9vw;
+  }
+}
+
+.partners .partners-inner .partners-content .lennon {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 176px;
+  height: 46px;
+  background: -webkit-image-set(url("https://hyundai-nft.s3.ap-northeast-2.amazonaws.com/image/partner02.png") 1x, url("https://hyundai-nft.s3.ap-northeast-2.amazonaws.com/image/partner02%402x.png") 2x) center no-repeat;
+  background: image-set(url("https://hyundai-nft.s3.ap-northeast-2.amazonaws.com/image/partner02.png") 1x, url("https://hyundai-nft.s3.ap-northeast-2.amazonaws.com/image/partner02%402x.png") 2x) center no-repeat;
+  background: -webkit-image-set(url("https://hyundai-nft.s3.ap-northeast-2.amazonaws.com/image/partner02.png") 1x, url("https://hyundai-nft.s3.ap-northeast-2.amazonaws.com/image/partner02%402x.png") 2x) bottom no-repeat;
+}
+
+@media (max-width: 415px) {
+  .partners .partners-inner .partners-content .lennon {
+    width: 35vw;
+    background-size: contain;
+    height: 9vw;
+  }
+}
+/*# sourceMappingURL=partners.css.map */

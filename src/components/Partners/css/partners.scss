@@ -1,0 +1,103 @@
+@import "../../../styles/common.scss";
+
+.partners {
+  background: $gray1000;
+  color: $gray100;
+  padding: 98px 0;
+
+  @media (max-width: 767px) {
+    padding: 10vw 35px;
+  }
+
+  .partners-inner {
+    flex-direction: column;
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 1040px) {
+      padding: 0 35px;
+    }
+
+    .partners-content {
+      @include flexBox(flex, space-between, center);
+      margin-top: 48px;
+
+      @media (max-width: 767px) {
+        flex-direction: column;
+        gap: 48px;
+      }
+      @media (max-width: 415px) {
+        gap: 8vw;
+      }
+
+      .innocean {
+        display: flex;
+        width: 185px;
+        height: 48px;
+        background: image-set(
+            url($url-images + "partner01.png") 1x,
+            url($url-images + "partner01%402x.png") 2x
+          )
+          center no-repeat;
+        background: -webkit-image-set(
+            url($url-images + "partner01.png") 1x,
+            url($url-images + "partner01%402x.png") 2x
+          )
+          center no-repeat;
+
+        @media (max-width: 415px) {
+          width: 35vw;
+          background-size: contain;
+          height: 9vw;
+        }
+      }
+
+      .witchwitch {
+        position: relative;
+        display: flex;
+        width: 192px;
+        height: 49px;
+        background: image-set(
+            url($url-images + "partner03.png") 1x,
+            url($url-images + "partner03%402x.png") 2x
+          )
+          center no-repeat;
+        background: -webkit-image-set(
+            url($url-images + "partner03.png") 1x,
+            url($url-images + "partner03%402x.png") 2x
+          )
+          bottom no-repeat;
+
+        @media (max-width: 415px) {
+          width: 35vw;
+          background-size: contain;
+          height: 9vw;
+        }
+      }
+
+      .lennon {
+        position: relative;
+        display: flex;
+        width: 176px;
+        height: 46px;
+        background: image-set(
+            url($url-images + "partner02.png") 1x,
+            url($url-images + "partner02%402x.png") 2x
+          )
+          center no-repeat;
+        background: -webkit-image-set(
+            url($url-images + "partner02.png") 1x,
+            url($url-images + "partner02%402x.png") 2x
+          )
+          bottom no-repeat;
+
+        @media (max-width: 415px) {
+          width: 35vw;
+          background-size: contain;
+          height: 9vw;
+        }
+      }
+    }
+  }
+}
