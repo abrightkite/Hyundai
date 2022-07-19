@@ -1,11 +1,11 @@
-const subtitle = {
+export const subtitle = {
   txt: {
     ko_value: "무한한 이동의 자유가 펼쳐질 새로운 세상",
     en_value: "A new world with infinite freedom of mobility",
   },
 };
 
-const introData = {
+export const introData = {
   txt1: {
     ko_value:
       "상상 가능 이동의 범위는 어디까지일까요?\n우리가 이야기하는 Metamobility는 이동의 영역이\n무한하게 확장될 수 있는 가능성을 의미합니다.",
@@ -38,7 +38,7 @@ const introData = {
   },
 };
 
-const productData = {
+export const productData = {
   txt1: {
     ko_value:
       "어느날 무한한 에너지를 가진 별똥별 1만개가\n지구에 떨어지게 됩니다.",
@@ -72,7 +72,7 @@ const productData = {
   },
 };
 
-const preSaleData = {
+export const preSaleData = {
   Saletxt1: {
     ko_value:
       "5월 9일, Metamobility universe 커뮤니티 활성화에 도움을 준\n화이트리스트 등록자 3,000명을 대상으로 Pre-sale이 진행될 예정입니다.",
@@ -117,7 +117,7 @@ const preSaleData = {
   },
 };
 
-const generalSaleData = {
+export const generalSaleData = {
   Saletxt1: {
     ko_value:
       "5월 10일, 커뮤니티에서 사전 선발된 인원들을 대상으로 6,500개의\n별똥별 NFT 선착순 판매가 진행됩니다. 홀더 혜택 및 민팅에 대한 \n" +
@@ -161,7 +161,7 @@ const generalSaleData = {
   },
 };
 
-const roadmapSubtitle = {
+export const roadmapSubtitle = {
   subTitle: {
     ko_value:
       "Hyundai Metamobility universe 공개!\n시공간을 뛰어넘는 새로운 세상을 완성해 갈 Metamobility NFT들을 만나보세요.",
@@ -174,8 +174,9 @@ const roadmapSubtitle = {
   },
 };
 
-const roadmapData = [
+export const roadmapData = [
   {
+    id: 1,
     title: {
       ko_value: "공식사이트 오픈",
       en_value: "Hyundai NFT\nofficial website opens",
@@ -194,6 +195,7 @@ const roadmapData = [
     status: "before",
   },
   {
+    id: 2,
     title: {
       ko_value: "Pre-sale",
       en_value: "Pre-sale",
@@ -212,6 +214,7 @@ const roadmapData = [
     status: "before",
   },
   {
+    id: 3,
     title: {
       ko_value: "General sale",
       en_value: "General sale",
@@ -225,9 +228,10 @@ const roadmapData = [
         "The minting of 6,500 of the\nremaining Shooting star NFTs\nwill be available on a first-come,\nfirst-served basis.\n",
     },
     date: "22.05.10",
-    status: "active",
+    status: "before",
   },
   {
+    id: 4,
     title: {
       ko_value: "Reveal",
       en_value: "Reveal",
@@ -242,10 +246,182 @@ const roadmapData = [
       Men_value:
         "Shooting star NFTs will be\nconverted to Metamobility NFTs,\nwith different rarities per design\nin a holder’s wallet.\n",
     },
-    date: "Later in May",
+    date: "22.05.30",
     status: "before",
   },
   {
+    id: 5,
+    title: {
+      ko_value: "두 번째 메타모빌리티\n" + "NFT 에어드랍\n",
+      en_value: "2nd Metamobility\nNFT Airdrop\n",
+    },
+    content: {
+      ko_value:
+        "두 번째 메타모빌리티 컬렉션인\n" +
+        "Plasma NFT가 MobED NFT\n" +
+        "홀더들에게 무료로 에어드랍 \n" +
+        "되었습니다. Plasma NFT는 \n" +
+        "놀라운 가능성을 지닌 컬렉션입니다.\n" +
+        "7월 최종 리빌을 기대해주세요.\n",
+      en_value:
+        "The second NFT collection of\n" +
+        "Metamobility – Plasma NFT,\n" +
+        "has been airdropped to\n" +
+        "MobED NFT holders. \n" +
+        "The Plasma NFT holds\n" +
+        "amazing potential.\n" +
+        "Please look forward to \n" +
+        "its reveal in July.\n",
+      Mko_value:
+        "두 번째 메타모빌리티 컬렉션인\n" +
+        "Plasma NFT가 MobED NFT\n" +
+        "홀더들에게 무료로 에어드랍 \n" +
+        "되었습니다. Plasma NFT는 \n" +
+        "놀라운 가능성을 지닌 컬렉션입니다.\n" +
+        "7월 최종 리빌을 기대해주세요.\n",
+      Men_value:
+        "The second NFT collection of\n" +
+        "Metamobility – Plasma NFT,\n" +
+        "has been airdropped to\n" +
+        "MobED NFT holders. \n" +
+        "The Plasma NFT holds\n" +
+        "amazing potential.\n" +
+        "Please look forward to \n" +
+        "its reveal in July.\n",
+    },
+    date: "22.06.20",
+    status: "before",
+  },
+  {
+    id: 6,
+    title: {
+      ko_value: "Plasma NFT \n" + "에어드랍 이벤트\n",
+      en_value: "Plasma NFT\n" + "Airdrop Event \n",
+    },
+    content: {
+      ko_value:
+        "Plasma NFT 중 일부는\n" +
+        "누구나 참여할 수 있는\n" +
+        "두 차례의 특별 에어드랍\n" +
+        "이벤트를 통해 배포됩니다.\n" +
+        "자세한 정보는 현대 NFT 공식\n" +
+        "디스코드를 통해 확인하세요.\n",
+      en_value:
+        "Part of the second collection\n" +
+        "will be distributed through\n" +
+        "two special airdrop events\n" +
+        "that are open to public.\n" +
+        "More information will be\n" +
+        "provided on the Hyundai\n" +
+        "official Discord.\n",
+      Mko_value:
+        "Plasma NFT 중 일부는\n" +
+        "누구나 참여할 수 있는\n" +
+        "두 차례의 특별 에어드랍\n" +
+        "이벤트를 통해 배포됩니다.\n" +
+        "자세한 정보는 현대 NFT 공식\n" +
+        "디스코드를 통해 확인하세요.\n",
+      Men_value:
+        "Part of the second collection\n" +
+        "will be distributed through\n" +
+        "two special airdrop events\n" +
+        "that are open to public.\n" +
+        "More information will be\n" +
+        "provided on the Hyundai\n" +
+        "official Discord.\n",
+    },
+    date: "22.06.23 - 22.07.04\n",
+    status: "before",
+  },
+
+  {
+    id: 7,
+    title: {
+      ko_value: "IONIQ 6 NFT \n" + "유틸리티 패키지\n",
+      en_value: "IONIQ 6 NFT \n" + "Utility Package\n",
+    },
+    content: {
+      ko_value:
+        "IONIQ 6 NFT 홀더에게는 NFT 멤버십 프로그램인 '아이오닉 시티즌십' 의 다양한 유틸리티가 순차적으로 제공됩니다.\n\n" +
+        "유틸리티에는 메타버스 플랫폼 (제페토, 로블록스, 디센트럴랜드 등)에서 사용 가능한 패션 및 게임 아이템을 비롯하여 홀더 전용 참여형 가상 공간인 ‘아이오닉 디지털 개러지’에 대한 입장 권한이 포함됩니다.\n" +
+        "또한 보유한 NFT의 희귀도에 따라 실물 커스텀 폰케이스를 제작할 수 있는 케이스티파이의 NFTYC(NFT Your Case) 기프트 카드가 제공됩니다.\n" +
+        "이외에도 NFT 뉴스레터 ‘캡슐 아이오닉’을 통해 아이오닉 라인업의 혁신 경험을 지속적으로 커뮤니케이션해 나갈 계획입니다.",
+      en_value:
+        "IONIQ 6 NFT holders will be granted with IONIQ Citizenship – the NFT membership program that provides various utilities from July to December.\n\n" +
+        "Utilities include fashion and game items available for use in metaverse platforms (Zepeto, Roblox, Decentraland etc), access to holder-exclusive virtual space called 'IONIQ Digital Garage', and gift cards for high rarity NFT holders to make their own custom phone case from NFTYC(NFT Your Case) by CASETiFY.\nMoreover, holders will be updated with innovative experiences of IONIQ line-up through the 'Capsule IONIQ' NFT newsletter.\n",
+      Mko_value:
+        "IONIQ 6 NFT 홀더에게는 NFT 멤버십 프로그램인 '아이오닉 시티즌십' 의 다양한 유틸리티가 순차적으로 제공됩니다.\n\n" +
+        "유틸리티에는 메타버스 플랫폼 (제페토, 로블록스, 디센트럴랜드 등)에서 사용 가능한 패션 및 게임 아이템을 비롯하여 홀더 전용 참여형 가상 공간인 ‘아이오닉 디지털 개러지’에 대한 입장 권한이 포함됩니다.\n" +
+        "또한 보유한 NFT의 희귀도에 따라 실물 커스텀 폰케이스를 제작할 수 있는 케이스티파이의 NFTYC(NFT Your Case) 기프트 카드가 제공됩니다.\n" +
+        "이외에도 NFT 뉴스레터 ‘캡슐 아이오닉’을 통해 아이오닉 라인업의 혁신 경험을 지속적으로 커뮤니케이션해 나갈 계획입니다.",
+      Men_value:
+        "IONIQ 6 NFT holders will be granted with IONIQ Citizenship – the NFT membership program that provides various utilities from July to December.\n\n" +
+        "Utilities include fashion and game items available for use in metaverse platforms (Zepeto, Roblox, Decentraland etc), access to holder-exclusive virtual space called 'IONIQ Digital Garage', and gift cards for high rarity NFT holders to make their own custom phone case from NFTYC(NFT Your Case) by CASETiFY.\nMoreover, holders will be updated with innovative experiences of IONIQ line-up through the 'Capsule IONIQ' NFT newsletter.\n",
+    },
+    date: "22.07 - 22.12",
+    status: "active",
+    class: "fontSize",
+  },
+
+  {
+    id: 8,
+    title: {
+      ko_value: "빅뱅",
+      en_value: "The Big Bang",
+    },
+    content: {
+      ko_value:
+        "홀더 대상 거버넌스 역할 부여,\n다음 세대 NFT 프로젝트를 통해서\n메타모빌리티 유니버스가 확장됩니다.",
+      en_value:
+        "NFT holders will grant governance roles, Metamobility universe expands via next Metamobility NFT collection series.",
+      Mko_value:
+        "홀더 대상 거버넌스 역할 부여, 다음 세대 NFT 프로젝트를 통해서 메타모빌리티 유니버스가 확장됩니다.",
+      Men_value:
+        "NFT holders will grant governance roles, Metamobility universe expands via next Metamobility NFT collection series.",
+    },
+    date: "",
+    status: "before",
+  },
+  {
+    id: 9,
+    title: {
+      ko_value: "우주의 팽창",
+      en_value: "Expansion of the Universe",
+    },
+    content: {
+      ko_value:
+        "특별 NFT 에어드랍이 진행되고,\n메타모빌리티 NFT 홀더 전용 공간이 열립니다.\n글로벌 NFT 프로젝트와\n메타버스 플랫폼과 협업을 추진합니다.",
+      en_value:
+        "Special NFT airdrop events, and private space will be open for the NFT holders. Possible cooperation with a global NFT project and Metaverse platform.\n",
+      Mko_value:
+        "특별 NFT 에어드랍이 진행되고, 메타모빌리티 NFT 홀더 전용 공간이 열립니다. 글로벌 NFT 프로젝트와 메타버스 플랫폼과 협업을 추진합니다.",
+      Men_value:
+        "Special NFT airdrop events, and private space will be open for the NFT holders. Possible cooperation with a global NFT project and Metaverse platform.",
+    },
+    date: "",
+    status: "before",
+  },
+  {
+    id: 10,
+    title: {
+      ko_value: "차원의 이동",
+      en_value: "Online to Offline",
+    },
+    content: {
+      ko_value:
+        "전세계인의 스포츠 이벤트와 연관된 굿즈\n혹은 혜택이 커뮤니티에 제공될 예정입니다.\n현실과 관련된 더 다양한 이벤트가\n여러분을 찾아갑니다.",
+      en_value:
+        "Worldwide sports event merchandises or related benefits will be provided for the community. More IRL benefits and events are coming soon.",
+      Mko_value:
+        "전세계인의 스포츠 이벤트와 연관된 굿즈\n혹은 혜택이 커뮤니티에 제공될 예정입니다.\n현실과 관련된 더 다양한 이벤트가\n여러분을 찾아갑니다.",
+      Men_value:
+        "Worldwide sports event merchandises or related benefits will be provided for the community. More IRL benefits and events are coming soon.",
+    },
+    date: "",
+    status: "before",
+  },
+  {
+    id: 11,
     title: {
       ko_value: "",
       en_value: "",
@@ -266,7 +442,7 @@ const roadmapData = [
   },
 ];
 
-const faqData = [
+export const faqData = [
   {
     title: {
       ko_value: "현대 메타모빌리티 유니버스란 무엇인가요?",
@@ -434,47 +610,25 @@ const faqData = [
     },
     content1: {
       ko_value:
-        "Pre-sale은 5월 9일 UTC 02:00, KST 11:00 에 시작 되며\nHyundai Metamobility universe 커뮤니티 확장에 도움을 준 화이트리스트 3,000명을 대상으로 총 3,000개의 별똥별 NFT만 판매합니다.",
+        "현재 별똥별 NFT는 모두 Mobed NFT로 변형된 상태이며, Opensea 등 2차 거래 플랫폼에서 MobED NFT를 구매하실 수 있습니다.\n",
       en_value:
-        "The pre-sale will start at 02:00 UTC, 11:00 KST on May 9th, 2022.\n3,000 NFTs will be available for 3,000 members on the whitelist, consisting of those who actively engaged in the build of Hyundai\nMetamobility universe community.",
+        "All shooting star NFTs have now transformed into MobED NFTs, and are available for purchase on the secondary market platforms such as Opensea.\n",
       Mko_value:
-        "Pre-sale은 5월 9일 UTC 02:00, KST 11:00 에 시작 되며\nHyundai Metamobility universe 커뮤니티 확장에 도움을 준 화이트리스트 3,000명을 대상으로 총 3,000개의 별똥별 NFT만 판매합니다.",
+        "현재 별똥별 NFT는 모두 Mobed NFT로 변형된 상태이며, Opensea 등 2차 거래 플랫폼에서 MobED NFT를 구매하실 수 있습니다.\n",
       Men_value:
-        "The pre-sale will start at 02:00 UTC, 11:00 KST on May 9th, 2022. 3,000 NFTs will be available for 3,000 members on the whitelist, consisting of those who actively engaged in the build of Hyundai Metamobility universe community.",
+        "All shooting star NFTs have now transformed into MobED NFTs, and are available for purchase on the secondary market platforms such as Opensea.\n",
     },
     content2: {
-      ko_value:
-        "General sale은 Pre-sale 다음날인 5월 10일 UTC 02:00, KST 11:00 에 시작됩니다.\n" +
-        "General sale 당일 안정적인 민팅을 위하여 커뮤니티 이벤트를 통해 Access list로 선정 된 19,500명만 참여가 가능하며 \n" +
-        "6,500개의 별똥별 NFT를 선착순 구매할 수 있습니다. \n" +
-        "19,500명은 General sale 시 판매되는 별똥별 NFT 6,500개 기준 3배수로 설정 하였으며, Access list 이벤트는 디스코드에서 진행됩니다. \n" +
-        "이벤트 참여 방법에 대한 자세한 내용은 디스코드를 통해 확인 해 주세요.\n",
-      en_value:
-        "The General sale will start at 02:00 UTC, 11:00 KST on May 10th, the day after the pre-sale.\n" +
-        "To provide a smooth minting experience, 19,500 people on the “Access list” who are selected through a community event will be able to\nparticipate on the day of the general sale. 6,500 Shooting star NFTs can be purchased on a first-come, first-served basis.\n" +
-        "The number 19,500 is set, to give opportunities to a pool that is three times the 6,500 Shooting star NFTs available in the general sale.\n" +
-        "The Access list event will be held at the Discord community.\n" +
-        "Please check the official Discord for more information on how to participate in the event.",
-      Mko_value:
-        "General sale은 Pre-sale 다음날인 5월 10일 UTC 02:00, KST 11:00 에 시작됩니다.\n" +
-        "General sale 당일 안정적인 민팅을 위하여 커뮤니티 이벤트를 통해 Access list로 선정 된 19,500명만 참여가 가능하며 6,500개의 별똥별 NFT를 선착순 구매할 수 있습니다. \n" +
-        "19,500명은 General sale 시 판매되는 별똥별 NFT 6,500개 기준 3배수로 설정 하였으며, Access list 이벤트는 디스코드에서 진행됩니다. 이벤트 참여 방법에 대한 자세한 내용은 디스코드를 통해 확인 해 주세요.\n",
-      Men_value:
-        "The General sale will start at 02:00 UTC, 11:00 KST on May 10th, the day after the pre-sale. To provide a smooth minting experience, 19,500 people on the “Access list” who are selected through a community event will be able to participate on the day of the general sale. 6,500 Shooting star NFTs can be purchased on a first-come, first-served basis.\n" +
-        "The number 19,500 is set, to give opportunities to a pool that is three times the 6,500 Shooting star NFTs available in the general sale.\n" +
-        "The Access list event will be held at the Discord community. Please check the official Discord for more information on how to participate in the event.",
+      ko_value: "",
+      en_value: "",
+      Mko_value: "",
+      Men_value: "",
     },
     content3: {
-      ko_value:
-        "현대 NFT 공식 사이트 내에서 구매할 수 있으며, 구매 제한이 있습니다. Pre-sale 때 지갑당 최대 1개, General sale 때 지갑당 최대 1개씩 구매 가능합니다.\n예를 들어, 화이트리스트에 선정 되어 Pre-sale을 통해 1개의 별똥별 NFT를 구매한 경우에도 General sale에서 1개의 별똥별 NFT를 추가로 구매 할 수 있습니다.",
-      en_value:
-        "Purchase is available on Hyundai NFT’s official website, with a limited quantity of 1 purchase per wallet for pre-sale and general sale each. \n" +
-        "For example, if you were selected on the whitelist and purchased 1 shooting star NFT through pre-sale, you can purchase 1 additional\nshooting star NFT at the general sale. \n",
-      Mko_value:
-        "현대 NFT 공식 사이트 내에서 구매할 수 있으며, 구매 제한이 있습니다. Pre-sale 때 지갑당 최대 1개, General sale 때 지갑당 최대 1개씩 구매 가능합니다.\n예를 들어, 화이트리스트에 선정 되어 Pre-sale을 통해 1개의 별똥별 NFT를 구매한 경우에도 General sale에서 1개의 별똥별 NFT를 추가로 구매 할 수 있습니다.",
-      Men_value:
-        "Purchase is available on Hyundai NFT’s official website, with a limited quantity of 1 purchase per wallet for pre-sale and general sale each. \n" +
-        "For example, if you were selected on the whitelist and purchased 1 shooting star NFT through pre-sale, you can purchase 1 additional shooting star NFT at the general sale. \n",
+      ko_value: "",
+      en_value: "",
+      Mko_value: "",
+      Men_value: "",
     },
   },
   {
@@ -633,6 +787,62 @@ const faqData = [
       Mko_value: "",
       Men_value:
         "Gas fee can fluctuate as it depends on the environment of the Ethereum blockchain at the moment of minting. Users will need to pay for the gas fee, since it is charged as a processing power provided by Ethereum blockchain network.\n",
+    },
+    content3: {
+      ko_value: "",
+      en_value: "",
+      Mko_value: "",
+      Men_value: "",
+    },
+  },
+  {
+    title: {
+      ko_value: "Mobed NFT가 무엇인가요?\n",
+      en_value: "What is MobED NFT?\n",
+    },
+    content1: {
+      ko_value:
+        "Mobed는 무한한 이동의 자유가 펼쳐질 세로운 세상, Hyundai Metamobility Universe의 첫 번째 Metamobility NFT 컬렉션입니다.\nMobed NFT는 22년 5월 30일을 기점으로 10,000개의 별똥별 NFT에서 변형되었으며, 10,000개의 NFT는 모두 고유한 특성과\n디자인을 가진 Generative art로 제작되었습니다.",
+      en_value:
+        "MobED is the first Metamobility NFT collection from the new world with infinite freedom of mobility : the Hyundai Metamobility Universe.\nAs of May 30th, 2022, MobED NFTs have been transformed from 10,000 shooting star NFTs.\nAll 10,000 NFTs were all created with unique characteristics and designs as generative art.",
+      Mko_value:
+        "Mobed는 무한한 이동의 자유가 펼쳐질 세로운 세상, Hyundai Metamobility Universe의 첫 번째 Metamobility NFT 컬렉션입니다. Mobed NFT는 22년 5월 30일을 기점으로 10,000개의 별똥별 NFT에서 변형되었으며, 10,000개의 NFT는 모두 고유한 특성과 디자인을 가진 Generative art로 제작되었습니다.",
+      Men_value:
+        "MobED is the first Metamobility NFT collection from the new world with infinite freedom of mobility : the Hyundai Metamobility Universe.\nAs of May 30th, 2022, MobED NFTs have been transformed from 10,000 shooting star NFTs.\nAll 10,000 NFTs were all created with unique characteristics and designs as generative art.",
+    },
+    content2: {
+      ko_value: "",
+      en_value: "",
+      Mko_value: "",
+      Men_value: "",
+    },
+    content3: {
+      ko_value: "",
+      en_value: "",
+      Mko_value: "",
+      Men_value: "",
+    },
+  },
+  {
+    title: {
+      ko_value: "Mobed NFT는 어떻게 구매할 수 있나요?",
+      en_value: "How do I purchase a MobED NFT?\n",
+    },
+    content1: {
+      ko_value:
+        "Mobed NFT는 별똥별의 형태로 0.15 ETH에 판매되었습니다. 현재는 민팅이 모두 완료되어 Opensea 등의 2차 거래 플랫폼에서 구매하실 수 있습니다.\n",
+      en_value:
+        "MobED NFTs were originally sold at 0.15 ETH in a form of shooting stars. Its minting is now entirely completed, and are available on the secondary market platforms such as Opensea.\n",
+      Mko_value:
+        "Mobed NFT는 별똥별의 형태로 0.15 ETH에 판매되었습니다. 현재는 민팅이 모두 완료되어 Opensea 등의 2차 거래 플랫폼에서 구매하실 수 있습니다.\n",
+      Men_value:
+        "MobED NFTs were originally sold at 0.15 ETH in a form of shooting stars. Its minting is now entirely completed, and are available on the secondary market platforms such as Opensea.\n",
+    },
+    content2: {
+      ko_value: "",
+      en_value: "",
+      Mko_value: "",
+      Men_value: "",
     },
     content3: {
       ko_value: "",
