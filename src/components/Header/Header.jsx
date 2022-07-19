@@ -1,6 +1,6 @@
 import React from "react";
 import images from "../../assets/images";
-import "./css/header.css";
+// import "./css/header.css";
 
 const Header = ({ setLangauge }) => {
   return (
